@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device=width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+        <!-- Animation CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="img/favicon/favicon.ico" />
+
+        <!-- Custom CSS-->
+        <link rel="stylesheet" href="css/styles.css">
+
+
+        <!-- JQuery + BS JS  -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+
+        <title>Cumreciclam.ro</title>
+    </head>
+
+    <body data-spy="scroll" data-target=".site-nav">
+        <header id="home" class="site-header d-flex flex-column align-content-between">
+
+            <nav class="site-nav navbar navbar-expand-md navbar-dark fixed-top">
+                <div class="container-fluid">
+
+                    <!-- Menu for small screens -->
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#togglerNav" aria-controls="togglerNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <a class="navbar-brand text-uppercase" href="#home">
+                        <i class="fas fa-recycle mr-2"></i>CumReciclam?
+                    </a>
+
+                    <div class="collapse navbar-collapse" id="togglerNav">
+                        <div class="navbar-nav ml-auto text-uppercase">
+                            <a class="nav-item nav-link" href="#home">Home</a>
+                            <a class="nav-item nav-link" href="#informatii">Informatii</a>
+                            <a class="nav-item nav-link" href="#puncte-colectare">Puncte colectare</a>
+                            <a class="nav-item nav-link" href="#cum-reciclam">Cum Reciclam</a>
+                            <a class="nav-item nav-link" href="#contact">Contact</a>
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </nav>
+
+            <!-- Banner Text -->
+            <section class="layout-hero jumbotron jumbotron-fluid d-flex align-items-center mt-5 text-reverse">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-11 col-sm-10 col-md-8 animated fadeInUp">
+
+                            <p class="banner-section-text">Reciclarea reprezintă introducerea unor reziduuri sau deșeuri într-un proces tehnologic pentru a obține reutilizarea și valorificarea lor sau în scopuri ecologice. Prin intermediul reciclării se reduce consumul de materie primă nouă și de asemenea se reduce consumul de energie și nivelul de contaminare al mediului natural. 
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </header>
+
+        <!-- INFORMATII -->
+        <div id="informatii" class="container-fluid info">
+            <h2>ULEIUL ARS DEVASTATOR <br/>PENTRU NATURA</h2>
+            <div class="row">
+
+                <div class="col-lg mx-5">
+                    <h3 class="my-5">Uleiul alimentar uzat are un efect devastator asupra mediului, acesta fiind o sursă regenerabilă. Acesta poate fi transformat în spăun natural, combustibil biodisel. În fiecare oraș există proiecte de colectare a uleiul.</h3>
+
+                    <h3 class="my-4">Cum colectăm uleiul alimentar în 3 pași:</h3>
+                    <p class="my-4">1. Strânge uleiul într-un recipient de metal, plastic sau sticlă, strecurându-l de resturile alimentare, printr-o sită.</p>
+                    <p class="my-4">2. Nu amesteca uleiul uzat cu apă, uleiuri minerale, ulei de motor, lichid de frână sau transmisie, produse chimice, resturi alimentare sau alte deșeuri deoarece nu mai poate ﬁ reciclat.</p>
+                    <p class="my-4">3. Când ai adunat o cantitate de minim 4 litri, completează formularul de predare și un voluntar te va contacta pentru predare, când se vor înregistra mai multe colectări în zona ta.</p>
+
+                    <h4 class="my-4">Calculează contribuția ta la salvarea mediului înconjurator.</h4>
+                    <p>Prin <input type="text" id="ulei-reciclat" name="ulei-reciclat" value="1"> L ulei reciclat ai salvat <span id="apa-salvata"> --- </span> L de apa, cantitate suficienta pentru a trai o persoana adulta timp de <span id="varsta"> --- </span> ani.</p>
+                    <p> 
+                        <button onclick="calculateOil()" class="bubbly-button">Calculeaza</button>
+                    </p>
+                </div>
+
+                <div class="col-lg mx-5">
+                    <h3 class="my-5">De ce este necesar sa colectam si recoltam uleiul</h3>
+
+                    <img src="img/ulei-1.png" class="img-fluid" alt="colecteaza ulei">
+                    <p class="my-5">Înfundă și corodează țevile de canalizare, costurile de întreținere și curățare a stațiilor de epurare întorcându-se tot în buzunarul consumatorului casnic.</p>
+
+                    <img src="img/ulei-2.png" class="img-fluid" alt="colecteaza ulei">
+                    <p class="my-5">Poluează apele formând o peliculă la suprafața apelor, ceea ce oprește oxigenul să ajungă la viețuitoarele și plantele din apă.</p>
+                    
+                    <img src="img/ulei-3.png" class="img-fluid" alt="colecteaza ulei">
+                    <p class="my-5">Poluează solul, care are nevoie de ani de zile pentru a se regenera și a redeveni productiv.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- PUNCTE COLECTARE-->
+        <div id="puncte-colectare">
+            <h3>Vezi centrele de colectare din orasul tau</h3>
+            <div id="googleMap" style="width:100%;height:600px;"></div>
+        </div>
+
+        <!-- CONTACT FORM - PCT-COL -->
+        <div id="pc-form">
+            <div id="contact" class="colect-point">
+                <h2>Pune pe harta si centrul tau!</h2>
+                <form action="" method="" name="form" class="form-box">
+                    <label for="name"></label><br>
+                    <input type="text" name="name" class="inp" placeholder="Nume (optional)"><br>
+
+                    <label for="email"></label><br>
+                    <input type="email" name="email" class="inp" placeholder="Email" required><br>
+
+                    <label for="point"></label><br>
+                    <input type="text" name="point" class="inp" placeholder="Tip de centru(optional)"><br>
+
+                    <label for="message"></label><br>
+                    <textarea name="msg" class="msg-box" placeholder="Message"></textarea><br>
+
+                    <input type="submit" name="submit" value="Send" class="bubbly-button">
+                </form>
+            </div>
+        </div>
+
+        <!-- PLANETA -->
+        <div class="container-fluid planet">
+            <img src="img/earth_day.gif" class="img-fluid" alt="Responsive image">
+        </div>
+
+
+        <!-- CUM RECICLAM -->
+        <div id="cum-reciclam" class="container-fluid recycle">
+            <h2>Cum sa reciclam?</h2>
+
+            <div class="row">
+                <div class="col-lg mx-5">
+                    <p class="mt-5">Reciclarea devine simplă și ușoară odată ce știți cum să faceți acest lucru. Există numeroase materiale care pot fi reciclate și, în general, toate necesită aceleași preparate simple. Cu toate acestea , pentru a vă asigura că eforturile dvs. de reciclare fac cel mai mare impact posibil, vă recomandăm să consultați municipalitatea sau furnizorul de servicii de reciclare pentru a vedea instrucțiunile specifice privind materialele și pregătirea.</p>
+                </div>
+
+                <div class="col-lg mx-5">
+                    <img src="img/pioner.png" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg mx-5">
+                    <img src="img/palstic.png" class="img-fluid" alt="Responsive image">
+            
+                    <p class="my-4 text1-d"># 3 Vinil - PVC (clorură de polivinil): au o suprafață strălucitoare și se scufundă în apă - uleiuri vegetale și sticle pentru sampoane, recipiente de detergent pentru rufe, sticle de ulei de gătit, produse pentru curățarea ferestrelor și împachetări de carne proaspătă</p>
+                    <p class="my-4 text1-d"># 4 LDPE ( polietilenă de joasă densitate): căni de margarină, muștar și capace de cafea</p>
+                </div>
+
+            
+                <div class="col-lg mx-5 margin-d order-first order-lg-0 col-lg-6">
+                    <h3 class="">PLASTICUL <br/>Tipuri de plastic:</h3>
+                    <p class="mt-5">Cele mai multe recipiente din plastic au tipul de plastic de tipul celui din care sunt ștanțate pe partea inferioară. Deși veți găsi în mod obișnuit produsele identificate mai jos în mod constant în recipiente fabricate dintr-un anumit material plastic, aceasta nu înseamnă că un produs va fi întotdeauna conținut în acest tip de material plastic. De exemplu, în timp ce ketchupul se găsește de obicei în # 5 sticle, este posibil să îl găsiți și în cutii # 1 sau # 7.
+                    <p class="my-4 text1-d"># 1 PET - (polietilen tereftalat) este limpede sau ușor colorat și are un punct de topire ridicat: sticle de băuturi răcoritoare, borcane de unt de arahide, dressing pentru salate și foi pentru tăvi de produse alimentare cu microunde. PET-ul reciclat este, de asemenea, utilizat pentru a produce covoare și îmbrăcăminte (poliester).</p>
+                    <p class="my-4 text1-d"># 2 HDPE - (polietilenă de înaltă densitate) - este translucidă sau colorată: căni de lapte, sticle de sucuri, sticle de apă și detergent, căzi de margarină, sticle de înălbire, sticle de loțiune, sticle de șampon și baie cu bule.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg mx-5 margin-d">
+                    <h3 class="">STICLA</h3>
+                    <p class="mt-5">Fiecare familie din Romania folosește în medie 500 de sticle și borcane de sticlă anual. Cel mai mare cuptor de sticlă produce peste 1 milion de sticle și borcane de sticlă pe zi. Sticla este 100% reciclabilă și poate fi utilizată din nou și din nou. Sticla care este aruncată și se termină în depozitele de deșeuri nu se va descompune niciodată.</p>
+                    <p>Cum se reciclează sticla : </p>
+  
+                    <p>-scoateți capacele<p>
+                    <p>-scoateți reziduurile de alimente si clatiți sticlele<p>
+                    <p>Înainte de a arunca fereste, oglinzi sau alte tipuri de sticla , verificati unde există în orasul dumeavoatră programe de recilare.</p>
+                </div>
+
+                <div class="col-lg mx-5 margin-d">
+                    <img src="img/sticla.png" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg mx-5 margin-d">
+                    <img src="img/metal2.png" class="img-fluid mt-5 pt-5" alt="Responsive image">
+                </div>
+
+                <div class="col-lg mx-5 margin-d order-first order-lg-0 col-lg-6">
+                      <h3 class="">METAL</h3>
+                      <p class="my-5">Cum se reciclează aluminiu:</p>
+                    <p>Multe orașe acceptă numai cutii de aluminiu și folie de aluminiu pentru reciclare. Majoritatea nu acceptă alte produse din aluminiu, cum ar fi siding și jgheaburi. Pentru a recicla aluminiul, urmați aceste reguli simple
+                    Asigurați-vă că cutiile și folia sunt lipsite de hrană, lichid și orice alte contaminanți.
+                    Nu amestecați aluminiul cu alte materiale
+                    Îndepărtați orice material din aluminiu, cum ar fi pungile pentru produse alimentare.</p>
+
+                    <p class="my-5">Cum să reciclați oțel:</p>
+                    <p>Articolele care pot fi reciclate: obiecte de uz casnic, inclusiv scaune pliante, garduri, scule, echipamente de joacă, armături, rame biciclete, cutii de gunoi etc. Articolele din fier pot fi reciclate cu oțel.
+                    Pentru informații suplimentare privind reciclarea oțelului, vizitați Institutul de reciclare a oțelului.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                    <div class="col-lg mx-5 margin-d">
+                           <h3 class="text-center ">Deșeuri periculoase pentru uz casnic</h3>
+                           <p class="mt-5">Protecția Mediului consideră o substanță periculoasă dacă se poate aprinde, dacă poate reacționa sau exploda când este amestecată cu alte substanțe, dacă este corozivă sau dacă este toxică. Această definiție include lucruri care probabil sunt stocate chiar acum în garaj, subsol, baie sau bucătărie. Asemenea produse pot include produse de curățare a scurgerilor și a ferestrelor, polizoare de curățare și de mobilier, dezinfectanți, vopsele de lustruit și unghii, antigel, ulei de motor, vopsea, diluant de vopsea și îngrășăminte, îngrășăminte, pesticide, buruieni, bile de molii și baterii. Conținutul utilizat sau de stânga al acestor produse de consum este cunoscut sub denumirea de "deșeuri periculoase pentru uz casnic".</p>
+                    </div>
+
+                    <div class="col-lg mx-5 margin-d">
+                        <img src="img/trash.png" class="img-fluid mt-5 pt-5" alt="Responsive image">
+                    </div>
+            </div>
+
+        </div>
+
+        <div class="container-fluid footer">
+            <p>© 2019 Nume Site – All rights reserved – Politica datelor cu caracter personal – Politica cookies
+            </p>
+        </div>
+        
+
+
+
+
+
+
+
+
+
+
+
+        <script>
+            function myMap() {
+                var mapProp = {
+                    center: new google.maps.LatLng(45.9432, 24.9668),
+                    zoom: 7,
+                };
+                var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+                var auchanCraiova = {lat: 44.327630, lng: 23.775129};
+                var marker = new google.maps.Marker({
+                    position: auchanCraiova,
+                    map: map,
+                    title: "oil, deee, electronics"
+                });
+                google.maps.event.addListener(marker, 'click', function() {
+                    map.setZoom(15);
+                    map.setCenter(marker.getPosition());
+                });
+
+                var profiBigVechi = {lat: 44.342015, lng: 23.777238};
+                var marker2 = new google.maps.Marker ({
+                    position: profiBigVechi,
+                    map: map,
+                    title: "baterii"
+                });
+                google.maps.event.addListener(marker2, 'click', function() {
+                    map.setZoom(15);
+                    map.setCenter(marker2.getPosition());
+                })
+
+
+            }
+
+        </script>
+
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7ubBvwIlYf37eKvCD0nijGc6VlyYFJ34&callback=myMap"></script>
+
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,295 @@
+/* Load fonts */
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300|Source+Sans+Pro:200,400,600');
+
+/* Variables */
+:root {
+    /* Override Variables */
+    --font-family-sans-serif: 'Source Sans Pro', -apple-system,
+    BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol';
+    --font-family-serif: 'Merriweather', 'Times New Roman',
+    serif;
+
+    /* Page Variables */
+    --font-family-title: var(--font-family-sans-serif);
+    --font-family-text: var(--font-family-serif);
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family-text);
+    background: linear-gradient(249.29deg, #84B62B 0%, rgba(132, 182, 43, 0) 105.84%);
+}
+
+/* Animation Styles */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    } 
+    to {
+        opacity: 0;
+    }
+}
+
+
+
+/* Site Header */
+.site-header {
+    background: url(../img/5.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+
+.site-nav {
+    background: rgba(0, 0, 0, .4);
+    color: white;
+    font-weight: 600;
+    filter: blur(.4px);
+}
+
+.site-header .nav-link {
+    position: relative;
+    padding-bottom: 0;
+    margin-bottom: 2px;
+}
+
+.site-header .nav-link:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    max-width: 100px;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all .3s ease-in-out 0s;
+}
+
+.site-header .nav-link:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.site-header .jumbotron {
+    min-height: 50vh;
+    background: transparent;
+}
+
+.banner-section-text {
+    margin-bottom: 2em !important;
+    font-size: 1.3em;
+    font-weight: bold;
+    border: 2px solid white;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+
+/* informatii */
+#informatii {
+    text-align: center;
+    color: #343A40;
+}
+
+.info h2, h3, h4, p {
+    font-style: normal;
+    line-height: normal;
+}
+
+.info h2, h3, h4 {
+    font-weight: bold;
+}
+
+.info h3, p {
+    text-align: justify;
+}
+
+.info h2{
+    font-size: 48px;
+    margin-bottom: 100px;
+}
+
+.info h3 {
+    font-size: 30px;
+}
+
+.info h4 {
+    font-size: 36px;
+}
+
+.info p {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.info input {
+    width: 100px;
+    padding-left: 40px;
+    background-color: #84B62B;
+    color: white;
+    outline: none;
+    border: none;
+}
+
+.info #apa-salvata, .info #varsta {
+    color: #84B62B;
+}
+
+.info .bubbly-button {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 1em;
+    padding: 1em 2em;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    background-color: #84B62B;
+    appearance: none;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: transform ease-in .1s, box-shadow ease-in .25s;
+    box-shadow: 0 2px 25px rgba(236, 144, 17, .5);
+}
+
+.info .bubbly-button:focus {
+    outline: 0;
+}
+
+.info .bubbly-button:before, .info .bubbly-button:after {
+    position: absolute;
+    content: ' ';
+    display: block;
+    width: 140%;
+    height: 100%;
+    left: -20%;
+    z-index: -1000;
+    transition: all ease-in-out .5s;
+    background-repeat: no-repeat;
+}
+
+.info .bubbly-button:active {
+    transform: scale(0.9);
+    background-color: #84B65B;
+    box-shadow: 0 2px 25px rgba(27, 165, 0, 0.8);
+}
+
+/* puncte colectare - mapa */
+#puncte-colectare, #pc-form {
+    text-align: center;
+}
+
+/* CONTACT FORM */
+.colect-point input, input:focus, textarea, textarea:focus {
+    border-radius: 5px;
+    outline: none;
+    border: 3px solid #84B62B;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.colect-point input, textarea {
+    background-color: #fff;
+}
+
+.colect-point input, textarea {
+    color: #7d7d7d;
+    width: 60%;
+    transition: ease .3s; 
+}
+
+.colect-point input, textarea, textarea:focus {
+    padding: 8px;
+}
+
+.colect-point input:focus, textarea:focus {
+    color: black;
+}
+
+.colect-point textarea, textarea:focus {
+    height: 200px;
+}
+
+.colect-point input[type=submit] {
+
+    width: 120px;
+    height: 45px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #EC9011;
+    outline: none;
+    border: none;
+    box-shadow: 0px 2px 25px -5px rgba(16, 97, 0, 0.658); 
+}
+
+.colect-point input[type=submit]:active {
+    box-shadow: none; 
+}
+
+/* planeta gif */
+
+.planet {
+    text-align: center;
+    background-color: #21315A;
+}
+
+/* cum reciclam */
+
+.recycle {
+    color: white;
+    background-color: #5B880A;
+    text-align: center;
+}
+
+.recycle h2, p {
+    font-style: normal;
+}
+
+.recycle h2 {
+    padding: 100px 0;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 64px;
+}
+
+.recycle p {
+    font-weight: normal;
+    line-height: 34px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.recycle .text1-d {
+    font-size: 16px;
+}
+
+/* footer */
+.footer {
+    padding: 50px;
+    width: 100%;
+    background: black;
+    color: white;
+}
+
+
