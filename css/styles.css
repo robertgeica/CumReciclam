@@ -23,7 +23,10 @@ html {
 
 body {
     font-family: var(--font-family-text);
-    background: linear-gradient(249.29deg, #84B62B 0%, rgba(132, 182, 43, 0) 105.84%);
+    background: linear-gradient(250deg, #84B62B 0%, rgba(132, 182, 43, 0) 100%);
+
+    color: #fff;
+    letter-spacing: 1px;
 }
 
 /* Animation Styles */
@@ -60,7 +63,6 @@ body {
 
 .site-nav {
     background: rgba(0, 0, 0, .4);
-    color: white;
     font-weight: 600;
     filter: blur(.4px);
 }
@@ -98,10 +100,9 @@ body {
     margin-bottom: 2em !important;
     font-size: 1.3em;
     font-weight: bold;
-    border: 2px solid white;
+    border: 2px solid #fff;
     padding: 10px;
     text-align: center;
-    color: white;
 }
 
 
@@ -146,7 +147,6 @@ body {
     width: 100px;
     padding-left: 40px;
     background-color: #84B62B;
-    color: white;
     outline: none;
     border: none;
 }
@@ -163,7 +163,6 @@ body {
     margin-bottom: 60px;
     background-color: #84B62B;
     appearance: none;
-    color: #fff;
     border-radius: 4px;
     border: none;
     cursor: pointer;
@@ -197,6 +196,7 @@ body {
 /* puncte colectare - mapa */
 #puncte-colectare, #pc-form {
     text-align: center;
+    color: #343A40;
 }
 
 /* CONTACT FORM */
@@ -213,17 +213,12 @@ body {
 }
 
 .colect-point input, textarea {
-    color: #7d7d7d;
     width: 60%;
     transition: ease .3s; 
 }
 
 .colect-point input, textarea, textarea:focus {
     padding: 8px;
-}
-
-.colect-point input:focus, textarea:focus {
-    color: black;
 }
 
 .colect-point textarea, textarea:focus {
